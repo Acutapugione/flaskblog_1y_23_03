@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import Mapped, mapped_column
 
 
-engine = create_engine("sqlite://", echo=True)
+engine = create_engine("sqlite:///my_db.sql", echo=True)
 Session = sessionmaker(engine)
 
 
